@@ -13,7 +13,7 @@ sep = ' x-x '
 
 ##helper functions
 #word length analysis
-def lengthanal():
+def lengthanalysis():
     global words
     
     biggest = 0
@@ -246,7 +246,7 @@ f.add_button("Print Word List", printWordlist, 100)
 f.add_button("BLANKS Generator", blankmaker, 100)
 f.add_button("Print Jumbled List", jumblerator, 100)
 #f.add_button("Print Word List", printWlist, 100)
-f.add_button("Word Length Analysis", lengthanal, 100)
+f.add_button("Word Length Analysis", lengthanalysis, 100)
 f.add_button("Hangman Generator", hangmangenerator, 100)
 
 # get frame rolling
