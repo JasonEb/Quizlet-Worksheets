@@ -1,5 +1,5 @@
 #script can be ran at 
-#http://www.codeskulptor.org/#user28_fcJVP814x2_5.py
+#http://www.codeskulptor.org/#user28_fcJVP814x2_7.py
 #this will take a copy and pasted exported Quizlet word-definitions list
 
 import simplegui, random
@@ -10,7 +10,7 @@ wordlist = []
 pos = ['noun','adj','verb','adv', 'conj']
 words = []
 definitions = []
-sep = ' x-x '
+sep = ' - '
 
 ##helper functions
 #word length analysis
@@ -33,7 +33,7 @@ def jumbler(word):
     mid = list(word[1:-1])
     
     if len(word) < 4:
-        print word
+        newword = word
     else:
         while (newword == word):
             random.shuffle(mid)
