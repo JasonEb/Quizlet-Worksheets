@@ -1,5 +1,6 @@
+#script can be ran at 
+#http://www.codeskulptor.org/#user28_fcJVP814x2_5.py
 #this will take a copy and pasted exported Quizlet word-definitions list
-#note this is used with www.codeskulptor.org
 
 import simplegui, random
 
@@ -174,7 +175,8 @@ def wordlistinput(text):
         print
         print words[i] + ": " + definitions[i]
          
-        
+    print    
+    
 def printWordlist():
     global words
     
@@ -182,6 +184,7 @@ def printWordlist():
     for i in words:
         print i
     print     
+    
 def blankmaker():
     s = ''
     global words, definitions, blankbank
@@ -200,9 +203,8 @@ def blankmaker():
     blankbank.sort()
     
     for i in blankbank:
-        s += i + " "
+        print i
         
-    print s
     print
     
 def blankinserter(textline):
